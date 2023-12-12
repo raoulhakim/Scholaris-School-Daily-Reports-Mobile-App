@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "434571806547",
+    "project_id": "scholaris-a9d3d",
+    "storage_bucket": "scholaris-a9d3d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:434571806547:android:189e25a87a6b930431c3a6",
+        "android_client_info": {
+          "package_name": "com.example.scholarisv2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbEWVWyeJoCSKn7uhk4umnuwv5Uf1m2BE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

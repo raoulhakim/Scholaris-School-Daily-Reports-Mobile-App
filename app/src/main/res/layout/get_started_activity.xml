@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/get_started_background"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Welcome to Scholaris"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:fontFamily="@font/inter_medium"
+            android:textColor="#ffffff">
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:fontFamily="@font/inter_medium"
+            android:gravity="center"
+            android:lineHeight="27dp"
+            android:paddingHorizontal="26dp"
+            android:text="All in one application for Teachers, and Parents"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="16sp">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/getstarted_image">
+            </ImageView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/getstarted_button">
+            <Button
+                android:id="@+id/signUpButton"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:text="Get Started"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:fontFamily="@font/inter_medium"
+                android:backgroundTint="#00ffffff">
+            </Button>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Already have an account?"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:layout_marginVertical="14dp"
+            android:fontFamily="@font/inter_medium"
+            android:textColor="#ffffff"
+            android:lineHeight="27dp">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/signin_button">
+            <Button
+                android:id="@+id/signInButton"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:text="Sign In"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:fontFamily="@font/inter_medium"
+                android:textColor="#ff0000"
+                android:backgroundTint="#00ffffff">
+            </Button>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.12">
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
