@@ -51,7 +51,6 @@
                         android:textColor="@color/white"
                         android:textSize="18sp"
                         android:textStyle="bold" />
-
                 </LinearLayout>
 
                 <LinearLayout
@@ -65,9 +64,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@drawable/settings" />
-
                 </LinearLayout>
-
             </LinearLayout>
 
             <LinearLayout
@@ -89,7 +86,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/maleuser" />
-
                 </LinearLayout>
 
                 <LinearLayout
@@ -140,7 +136,6 @@
                                 android:text="Parent"
                                 android:textColor="@color/white"
                                 android:textSize="11dp" />
-
                         </LinearLayout>
 
                     </LinearLayout>
