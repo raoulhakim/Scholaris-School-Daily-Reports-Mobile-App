@@ -149,6 +149,30 @@
                             app:layout_constraintTop_toBottomOf="@+id/textView11"
                             android:textColor="@color/greyHint"/>
 
+                        <TextView
+                            android:id="@+id/textView16"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:layout_marginTop="00dp"
+                            android:fontFamily="@font/inter_medium"
+                            android:text="at"
+                            android:textColor="@color/greyHint"
+                            android:textSize="12dp"
+                            app:layout_constraintStart_toEndOf="@+id/textView12"
+                            app:layout_constraintTop_toBottomOf="@+id/textView11"></TextView>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:fontFamily="@font/inter_medium"
+                            android:text="12:00pm"
+                            android:textColor="@color/greyHint"
+                            android:textSize="12dp"
+                            app:layout_constraintStart_toEndOf="@+id/textView16"
+                            app:layout_constraintTop_toBottomOf="@+id/textView11"></TextView>
+
                         <ImageView
                             android:id="@+id/imageView"
                             android:layout_width="50dp"
@@ -193,47 +217,52 @@
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 
-                        <TextView
-                            android:id="@+id/textView13"
-                            android:layout_width="0dp"
+                        <LinearLayout
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="16dp"
-                            android:layout_marginTop="16dp"
-                            android:fontFamily="@font/inter_medium"
-                            android:text="Pengumuman Pembagian Rapor"
-                            android:textColor="@color/black"
-                            android:textStyle="bold"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/textView13"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="16dp"
+                                android:paddingStart="15dp"
+                                android:paddingEnd="100dp"
+                                android:fontFamily="@font/inter_medium"
+                                android:text="Pengumuman Pembagian Rapor Class 1.1 Pada Tanggal 31 Desember 2023"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"
+                                 />
 
-                        <View
-                            android:id="@+id/view"
-                            android:layout_width="0dp"
-                            android:layout_height="1dp"
-                            android:layout_marginStart="16dp"
-                            android:layout_marginTop="9dp"
-                            android:layout_marginEnd="24dp"
-                            android:background="@color/greyHint"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/textView14"></View>
+                            <View
+                                android:id="@+id/view"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginStart="16dp"
+                                android:layout_marginTop="9dp"
+                                android:layout_marginEnd="24dp"
+                                android:background="@color/greyHint"
+                                ></View>
 
-                        <TextView
-                            android:id="@+id/textView15"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="12dp"
-                            android:fontFamily="@font/inter_medium"
-                            android:justificationMode="inter_word"
-                            android:paddingLeft="15dp"
-                            android:paddingRight="15dp"
-                            android:paddingBottom="15dp"
-                            android:text="Lorem Lorem em ipsum Loremor ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum"
-                            android:textColor="@color/black"
-                            android:textSize="12dp"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/view"
-                            tools:layout_editor_absoluteX="0dp" />
+                            <TextView
+                                android:id="@+id/textView15"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="12dp"
+                                android:fontFamily="@font/inter_medium"
+                                android:justificationMode="inter_word"
+                                android:paddingLeft="15dp"
+                                android:paddingRight="15dp"
+                                android:paddingBottom="15dp"
+                                android:text="Lorem Lorem em ipsum Loremor ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum"
+                                android:textColor="@color/black"
+                                android:textSize="12dp"
+                                />
+
+                        </LinearLayout>
+
+
+
 
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -342,6 +371,7 @@
                                     android:textSize="13dp"
                                     android:layout_marginStart="15dp"
                                     android:layout_marginEnd="80dp"
+                                    android:layout_marginBottom="10dp"
                                     android:textColor="#403F3F">
                                 </TextView>
 
@@ -353,8 +383,8 @@
                             </LinearLayout>
 
                         </LinearLayout>
+
                         <!--Comment 2-->
-
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -414,6 +444,7 @@
                                     android:textSize="13dp"
                                     android:layout_marginStart="80dp"
                                     android:layout_marginEnd="15dp"
+                                    android:layout_marginBottom="10dp"
                                     android:textColor="#403F3F">
                                 </TextView>
 
@@ -425,8 +456,8 @@
                             </LinearLayout>
 
                         </LinearLayout>
+
                         <!--Comment 3-->
-
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -483,6 +514,7 @@
                                     android:textSize="13dp"
                                     android:layout_marginStart="15dp"
                                     android:layout_marginEnd="80dp"
+                                    android:layout_marginBottom="10dp"
                                     android:textColor="#403F3F">
                                 </TextView>
 
@@ -494,8 +526,8 @@
                             </LinearLayout>
 
                         </LinearLayout>
+
                         <!--Comment 4-->
-
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -555,6 +587,7 @@
                                     android:textSize="13dp"
                                     android:layout_marginStart="80dp"
                                     android:layout_marginEnd="15dp"
+                                    android:layout_marginBottom="10dp"
                                     android:textColor="#403F3F">
                                 </TextView>
 
@@ -566,8 +599,8 @@
                             </LinearLayout>
 
                         </LinearLayout>
-                        <!--Comment 5-->
 
+                        <!--Comment 5-->
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -624,6 +657,7 @@
                                     android:textSize="13dp"
                                     android:layout_marginStart="15dp"
                                     android:layout_marginEnd="80dp"
+                                    android:layout_marginBottom="10dp"
                                     android:textColor="#403F3F">
                                 </TextView>
 
@@ -635,8 +669,8 @@
                             </LinearLayout>
 
                         </LinearLayout>
-                        <!--Comment 6-->
 
+                        <!--Comment 6-->
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -696,6 +730,7 @@
                                     android:textSize="13dp"
                                     android:layout_marginStart="80dp"
                                     android:layout_marginEnd="15dp"
+                                    android:layout_marginBottom="10dp"
                                     android:textColor="#403F3F">
                                 </TextView>
 
