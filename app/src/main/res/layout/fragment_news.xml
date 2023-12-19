@@ -69,12 +69,70 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <pl.droidsonroids.gif.GifImageView
-                android:layout_width="190dp"
-                android:layout_height="140dp"
-                android:layout_gravity="center"
-                android:src="@drawable/classgif"
-                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/newsjumbotron"
+                android:layout_margin="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="60dp"
+                    android:paddingLeft="15dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/school"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="10dp">
+
+                        </ImageView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Class 1.1"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/inter_medium"
+                            android:textSize="20dp"
+                            >
+                        </TextView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/femaleuser"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="10dp">
+                        </ImageView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Natasha Palosha"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/inter_medium"
+                            android:textSize="15dp"
+                            android:paddingTop="5dp">
+                        </TextView>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
 
             <LinearLayout
                 android:layout_width="wrap_content"
