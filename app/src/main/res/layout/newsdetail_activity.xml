@@ -1,0 +1,770 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="NewsDetailActivity"
+    android:background="#F4F1F1"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_toolbar_2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:gravity="center">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/back_menu_icon" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="News details"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end|center_vertical"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/inter_medium"
+                        android:text="Edit"
+                        android:textAlignment="textEnd"
+                        android:textAllCaps="false"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:minWidth="0dp"
+                        android:minHeight="0dp"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end|center_vertical"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/inter_medium"
+                        android:text="Delete"
+                        android:textAlignment="textEnd"
+                        android:textAllCaps="false"
+                        android:textSize="13sp"
+                        android:textStyle="bold"
+                        android:minWidth="0dp"
+                        android:minHeight="0dp"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingTop="4dp"
+                        android:paddingBottom="4dp"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:background="@color/white"
+                        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+                        tools:layout_editor_absoluteX="0dp">
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="11dp"
+                            android:layout_marginTop="21dp"
+                            android:fontFamily="@font/inter_medium"
+                            android:text="Class 1.1 Teacher"
+                            android:textColor="@color/black"
+                            app:layout_constraintStart_toEndOf="@+id/imageView"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="11dp"
+                            android:fontFamily="@font/inter_medium"
+                            android:text="Tuesday, 26 Des"
+                            android:textSize="12dp"
+                            app:layout_constraintStart_toEndOf="@+id/imageView"
+                            app:layout_constraintTop_toBottomOf="@+id/textView11"
+                            android:textColor="@color/greyHint"/>
+
+                        <ImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="12dp"
+                            android:background="@drawable/rounded_bg"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/maleuser" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="19dp"
+                        android:background="@color/white"
+                        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+                        tools:layout_editor_absoluteX="0dp">
+
+                        <TextView
+                            android:id="@+id/textView14"
+                            android:layout_width="0dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="24dp"
+                            android:background="@drawable/rectangle_2"
+                            android:backgroundTint="#EAE7E7"
+                            android:fontFamily="@font/inter_medium"
+                            android:gravity="center"
+                            android:text="Class News"
+                            android:textColor="#686666"
+                            android:textSize="11dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="16dp"
+                            android:fontFamily="@font/inter_medium"
+                            android:text="Pengumuman Pembagian Rapor"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <View
+                            android:id="@+id/view"
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="9dp"
+                            android:layout_marginEnd="24dp"
+                            android:background="@color/greyHint"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView14"></View>
+
+                        <TextView
+                            android:id="@+id/textView15"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:fontFamily="@font/inter_medium"
+                            android:justificationMode="inter_word"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:paddingBottom="15dp"
+                            android:text="Lorem Lorem em ipsum Loremor ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum"
+                            android:textColor="@color/black"
+                            android:textSize="12dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/view"
+                            tools:layout_editor_absoluteX="0dp" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--    Comment Section-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Comments "
+                            android:fontFamily="@font/inter_medium"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginStart="15dp"
+                            android:textColor="#403E3E">
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="6"
+                            android:fontFamily="@font/inter_medium"
+                            android:layout_marginTop="20dp"
+                            android:textColor="#403E3E">
+                        </TextView>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <!--Comment 1-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Gojo Satoru Parent"
+                                    android:fontFamily="@font/inter_medium"
+                                    android:textSize="11dp"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:textColor="@color/black">
+                                </TextView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="26/12"
+                                    android:textSize="11dp"
+                                    android:fontFamily="@font/inter_medium"
+                                    android:layout_marginEnd="5dp"
+                                    android:textColor="@color/greyHint">
+                                </TextView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="12:00pm"
+                                    android:textSize="11dp"
+                                    android:fontFamily="@font/inter_medium"
+                                    android:textColor="@color/greyHint">
+                                </TextView>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Lorem ipsum ot sit amet Lum dolot sit ametLorem ipsum dolot sit amet Lorem ipsum dolot sit amet Lorem ipsum dolot sit amet"
+                                    android:fontFamily="@font/inter_medium"
+                                    android:justificationMode="inter_word"
+                                    android:textSize="13dp"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginEnd="80dp"
+                                    android:textColor="#403F3F">
+                                </TextView>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/greyHint"></View>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <!--Comment 2-->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="end">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Class 1.1 Teacher"
+                                    android:fontFamily="@font/inter_medium"
+                                    android:textSize="11dp"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:textColor="@color/black"
+                                    android:gravity="end">
+                                </TextView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="26/12"
+                                    android:textSize="11dp"
+                                    android:fontFamily="@font/inter_medium"
+                                    android:layout_marginEnd="5dp"
+                                    android:textColor="@color/greyHint">
+                                </TextView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="13:20pm"
+                                    android:textSize="11dp"
+                                    android:fontFamily="@font/inter_medium"
+                                    android:layout_marginEnd="15dp"
+                                    android:textColor="@color/greyHint">
+                                </TextView>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="end">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="amet asdsad  asdas d asdas asdasd  asdas d asdas  sadas d asdas a das  asdsa asdas d asdas "
+                                    android:fontFamily="@font/inter_medium"
+                                    android:justificationMode="inter_word"
+                                    android:textSize="13dp"
+                                    android:layout_marginStart="80dp"
+                                    android:layout_marginEnd="15dp"
+                                    android:textColor="#403F3F">
+                                </TextView>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/greyHint"></View>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <!--Comment 3-->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Gojo Satoru Parent"
+                                    android:fontFamily="@font/inter_medium"
+                                    android:textSize="11dp"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:textColor="@color/black">
+                                </TextView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="26/12"
+                                    android:textSize="11dp"
+                                    android:fontFamily="@font/inter_medium"
+                                    android:layout_marginEnd="5dp"
+                                    android:textColor="@color/greyHint">
+                                </TextView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="12:00pm"
+                                    android:textSize="11dp"
+                                    android:fontFamily="@font/inter_medium"
+                                    android:textColor="@color/greyHint">
+                                </TextView>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Lorem ipsum ot sit amet Lum dolot sit ametLorem ipsum dolot sit amet Lorem ipsum dolot sit amet Lorem ipsum dolot sit amet"
+                                    android:fontFamily="@font/inter_medium"
+                                    android:justificationMode="inter_word"
+                                    android:textSize="13dp"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginEnd="80dp"
+                                    android:textColor="#403F3F">
+                                </TextView>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/greyHint"></View>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <!--Comment 4-->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="end">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Class 1.1 Teacher"
+                                    android:fontFamily="@font/inter_medium"
+                                    android:textSize="11dp"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:textColor="@color/black"
+                                    android:gravity="end">
+                                </TextView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="26/12"
+                                    android:textSize="11dp"
+                                    android:fontFamily="@font/inter_medium"
+                                    android:layout_marginEnd="5dp"
+                                    android:textColor="@color/greyHint">
+                                </TextView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="13:20pm"
+                                    android:textSize="11dp"
+                                    android:fontFamily="@font/inter_medium"
+                                    android:layout_marginEnd="15dp"
+                                    android:textColor="@color/greyHint">
+                                </TextView>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="end">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="amet asdsad  asdas d asdas asdasd  asdas d asdas  sadas d asdas a das  asdsa asdas d asdas "
+                                    android:fontFamily="@font/inter_medium"
+                                    android:justificationMode="inter_word"
+                                    android:textSize="13dp"
+                                    android:layout_marginStart="80dp"
+                                    android:layout_marginEnd="15dp"
+                                    android:textColor="#403F3F">
+                                </TextView>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/greyHint"></View>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <!--Comment 5-->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Gojo Satoru Parent"
+                                    android:fontFamily="@font/inter_medium"
+                                    android:textSize="11dp"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:textColor="@color/black">
+                                </TextView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="26/12"
+                                    android:textSize="11dp"
+                                    android:fontFamily="@font/inter_medium"
+                                    android:layout_marginEnd="5dp"
+                                    android:textColor="@color/greyHint">
+                                </TextView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="12:00pm"
+                                    android:textSize="11dp"
+                                    android:fontFamily="@font/inter_medium"
+                                    android:textColor="@color/greyHint">
+                                </TextView>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Lorem ipsum ot sit amet Lum dolot sit ametLorem ipsum dolot sit amet Lorem ipsum dolot sit amet Lorem ipsum dolot sit amet"
+                                    android:fontFamily="@font/inter_medium"
+                                    android:justificationMode="inter_word"
+                                    android:textSize="13dp"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginEnd="80dp"
+                                    android:textColor="#403F3F">
+                                </TextView>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/greyHint"></View>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                        <!--Comment 6-->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="end">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Class 1.1 Teacher"
+                                    android:fontFamily="@font/inter_medium"
+                                    android:textSize="11dp"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:textColor="@color/black"
+                                    android:gravity="end">
+                                </TextView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="26/12"
+                                    android:textSize="11dp"
+                                    android:fontFamily="@font/inter_medium"
+                                    android:layout_marginEnd="5dp"
+                                    android:textColor="@color/greyHint">
+                                </TextView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="13:20pm"
+                                    android:textSize="11dp"
+                                    android:fontFamily="@font/inter_medium"
+                                    android:layout_marginEnd="15dp"
+                                    android:textColor="@color/greyHint">
+                                </TextView>
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="end">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="amet asdsad  asdas d asdas asdasd  asdas d asdas  sadas d asdas a das  asdsa asdas d asdas "
+                                    android:fontFamily="@font/inter_medium"
+                                    android:justificationMode="inter_word"
+                                    android:textSize="13dp"
+                                    android:layout_marginStart="80dp"
+                                    android:layout_marginEnd="15dp"
+                                    android:textColor="#403F3F">
+                                </TextView>
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"
+                                    android:background="@color/greyHint"></View>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <!--    End Comment Section-->
+
+                <!--    Reply Section-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/orange">
+
+                            <EditText
+                                android:id="@+id/editText"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:background="@color/white"
+                                android:hint="Enter Reply"
+                                android:textColorHint="@color/greyHint"
+                                android:textColor="#403F3F"
+                                android:textSize="15dp"
+                                android:inputType="text"
+                                android:paddingStart="25dp"
+                                android:layout_weight="1"/>
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:background="@drawable/send_reply" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+                <!--    End Reply Section-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>
